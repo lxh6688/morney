@@ -1,10 +1,10 @@
 <template>
    <div>
-        <LayOut>
+        <Layout>
             <p>
                Labels.vue
             </p>
-        </LayOut>
+        </Layout>
     </div>
 </template>
 

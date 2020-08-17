@@ -1,10 +1,10 @@
 <template>
    <div>
-        <LayOut>
+        <Layout>
             <p>
                Statistics.vue
             </p>
-        </LayOut>
+        </Layout>
     </div>
 </template>
 
