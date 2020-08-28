@@ -20,7 +20,7 @@
     @Prop() placeholder?: string
 
     onValueChanged(value: string) {
-      this.$emit('update:value',value)
+      this.$emit('update:value',value);
     }
   }
 </script>
