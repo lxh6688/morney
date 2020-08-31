@@ -1,5 +1,4 @@
 <template>
-   <div>
         <Layout>
             <div class="tags">
                 <router-link class="tag" v-for="tag in tags" :key="tag.id" :to="`/labels/edit/${tag.id}`">
@@ -8,10 +7,9 @@
                 </router-link>
             </div>
             <div class="createTag-wrapper">
-                <Button class="createTag" @click="createTag">新建标签</button>
+                <Button class="createTag" @click="createTag">新建标签</Button>
             </div>
         </Layout>
-    </div>
 </template>
 
 <script lang="ts">
@@ -28,7 +26,8 @@
         get tags(){
             return this.$store.state.tagList;
         }
-        beforeCreated(){
+
+        beforeCreate(){
             this.$store.commit('fetchTags');
         }
     }

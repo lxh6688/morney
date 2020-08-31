@@ -19,7 +19,7 @@
   import TagHelper from '@/mixins/TagHelper';
 
   @Component
-  export default class Notes extends mixins(TagHelper) {
+  export default class Tags extends mixins(TagHelper) {
     selectedTags: string[] = [];
 
     get tagList(){
@@ -29,6 +29,7 @@
     created(){
       this.$store.commit('fetchTags');
     }
+
     toggle(tag: string){
       const index = this.selectedTags.indexOf(tag);
       if(index >= 0){
